@@ -1,0 +1,228 @@
+body {
+	background-color: #1D1A1A;
+	font-family: "Roboto";
+	font-weight: normal;
+	font-style: normal;
+	color: #FAF19E;
+	padding: 0;
+	margin: 0;
+}
+
+
+.container {
+	box-sizing: border-box;
+	max-width: 1920px;
+	margin: 0px auto;
+}
+/*@media (max-width: 1025px) {
+	.container {
+		max-width: 1024px;
+	}
+	body { background: grey; }
+	.banner div {
+		background: url("../source/pictures/fon/sfakelom2_1024.png") no-repeat;
+	}
+}*/
+
+
+.header {
+	/*border: 2px solid #ece89d;*/
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 122px;
+	margin: 0px auto;
+	padding: 19px 0px 18px 0px;
+}
+.menu_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1220px;
+	min-width: 845px;
+	height: 85px;
+	margin: 0px auto;
+}
+.menulogo {
+	margin-right: 21.475%;
+}
+.menu {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	padding-right: 8px;
+}
+.menu a {
+	text-decoration: none;
+	color: #FAF19E;
+}
+
+
+.banner {
+	width: 100%;
+	height: 35vw;
+	min-height: 445px;
+	margin: 0px auto;
+	background: url("../source/pictures/fon/volk1.png") no-repeat;
+	background-size: 100% 100%;
+}
+
+
+.nedremlet{
+	box-sizing: border-box;
+	padding: 71px 0px 95px 0px;
+	width: 100%;
+	margin: 0px auto;
+}
+.title {
+	text-align: center;
+	margin: 0px 0px 2.3vw 0px;
+	font-size: 40px;
+	line-height: 47px;
+}
+.cardscontainer {
+	box-sizing: border-box;
+	max-width: 63vw;
+	min-width: 845px;
+	margin: 0px auto;
+}
+.cards {
+	display: flex;
+	width: 100%;
+	/*display: flex;
+	justify-content: space-between;
+	/*align-items: center;
+	box-sizing: border-box;
+	height: 427px;
+	width: 1208px;
+	padding: 0px;
+	margin: 0px auto;*/
+	/*margin: 0px -20px;*/
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	/*box-sizing: border-box;*/
+	width: 30.46%;
+	/*flex:0 1 33.333%;
+	padding: 0px 20px;
+	border: 1px solid grey;*/
+}
+.card:nth-child(2) {
+	margin: 0px 4.2% 0px 4.2%;
+}
+.cardtitle {
+	font-size: 20px;
+	line-height: 23px;
+	text-align: center;
+	padding: 20px 0px 10px 0px;
+}
+.cardtext {
+	font-size: 16px;
+	line-height: 19px;
+	color: #B7B7B7;
+	margin: 0px 0px 40px 0px;
+	flex: 1 1 auto;
+}
+.button {
+	/*display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 258px;
+	height: 64px;*/
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	box-sizing: border-box;
+	/*background-color: #AE6734;
+	border: 2px solid #FAF19E;
+	border-radius: 12px;*/
+	display: block;
+	margin: 0px auto;
+	height: 64px;
+	width: 258px;
+	text-align: center;
+	line-height: 60px;
+}
+.button a {
+	display: block;
+	text-decoration: none;
+	color: #FAF19E;
+	transition: 0.2s;
+	background-color: #AE6734;
+	border: 2px solid #FAF19E;
+	border-radius: 12px;
+}
+.button a:active {
+	background-color: #FAF19E;
+	border: 2px solid #AE6734;
+	color: #AE6734;
+	box-shadow: inset 0 4px 5px rgba(0,0,0,0.5);
+}
+
+
+.peysi {
+	box-sizing: border-box;
+	height: 35vw;
+	min-height: 579px;
+	width: 100%;
+	min-width: 845px;
+	background: url("../source/pictures/fon/sfakelom2.png") no-repeat;
+	background-size: 100% 100%;
+	margin: 0px auto;
+	position: relative;
+	/*z-index: 0;*/
+}
+.background {
+	position: absolute;
+	/*z-index: 1;*/
+	width: 100%;
+	height: 100%;
+	/*background: url("../source/pictures/fon/sfakelom2.png");*/
+	background-color: #1D1A1A;
+	opacity: 0.6;
+}
+.materials {
+	position: relative;
+	/*z-index: 2;*/
+	max-width: 720px;
+	height: 50%;
+	margin: 0px auto;
+	padding: 8.25% 0px 0px 0px;
+}
+.materials_text {
+	font-size: 20px;
+	line-height: 30px;
+	color: #E4E4E4;
+	text-align: center;
+	margin: 0px 0px 5vw 0px;
+}
+
+
+.footer {
+	box-sizing: border-box;
+	height: 332px;
+	/*max-width: 1920px;*/
+	margin: 0px auto;
+	padding: 75px 0px 0px 0px;
+}
+.nav_container {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1220px;
+	min-width: 845px;
+	margin: 0px auto;
+	padding: 41px 0px;
+}
+.nav {
+	font-size: 16px;
+	line-height: 19px;
+	color: #A5A5A5;
+	padding-right: 8px;
+}
+.nav:first-child {
+	margin-right: 38.77%;
+}
+.nav a {
+	text-decoration: none;
+	color: #A5A5A5;
+}
