@@ -12,38 +12,50 @@ body {
 .container {
 	box-sizing: border-box;
 	max-width: 1920px;
+	min-width: 845px;
 	margin: 0px auto;
 }
-/*@media (max-width: 1025px) {
-	.container {
-		max-width: 1024px;
-	}
-	body { background: grey; }
-	.banner div {
-		background: url("../source/pictures/fon/sfakelom2_1024.png") no-repeat;
-	}
-}*/
 
 
 .header {
 	/*border: 2px solid #ece89d;*/
+	position: fixed;
 	box-sizing: border-box;
 	width: 100%;
-	min-height: 122px;
-	margin: 0px auto;
-	padding: 19px 0px 18px 0px;
+	top: 0;
+	left: 0;
+	height: 85px;
+	padding: 2px 0px;
+	z-index: 50;
 }
-.menu_container {
+.header:before {
+	content:"";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #1D1A1A;
+}
+.header_menu_container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	max-width: 1220px;
-	min-width: 845px;
 	height: 85px;
 	margin: 0px auto;
+	position: relative;
+	z-index:2;
 }
 .menulogo {
+	flex: 0 0 185px;
 	margin-right: 21.475%;
+}
+.menulogo img {
+	max-width: 100%;
+}
+.header_burger {
+	display: none;
 }
 .menu {
 	font-weight: 500;
@@ -54,6 +66,10 @@ body {
 .menu a {
 	text-decoration: none;
 	color: #FAF19E;
+	transition: 0.4s;
+}
+.menu a:hover {
+	color: #DAA520;
 }
 
 
@@ -61,7 +77,7 @@ body {
 	width: 100%;
 	height: 35vw;
 	min-height: 445px;
-	margin: 0px auto;
+	margin: 90px 0px 0px 0px;
 	background: url("../source/pictures/fon/volk1.png") no-repeat;
 	background-size: 100% 100%;
 }
@@ -122,20 +138,13 @@ body {
 	color: #B7B7B7;
 	margin: 0px 0px 40px 0px;
 	flex: 1 1 auto;
+	text-align: center;
 }
 .button {
-	/*display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 258px;
-	height: 64px;*/
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 21px;
 	box-sizing: border-box;
-	/*background-color: #AE6734;
-	border: 2px solid #FAF19E;
-	border-radius: 12px;*/
 	display: block;
 	margin: 0px auto;
 	height: 64px;
@@ -152,6 +161,9 @@ body {
 	border: 2px solid #FAF19E;
 	border-radius: 12px;
 }
+.button a:hover {
+	box-shadow: 0 0 10px rgba(218,165,32,0.9);
+}
 .button a:active {
 	background-color: #FAF19E;
 	border: 2px solid #AE6734;
@@ -165,7 +177,6 @@ body {
 	height: 35vw;
 	min-height: 579px;
 	width: 100%;
-	min-width: 845px;
 	background: url("../source/pictures/fon/sfakelom2.png") no-repeat;
 	background-size: 100% 100%;
 	margin: 0px auto;
@@ -200,18 +211,25 @@ body {
 
 .footer {
 	box-sizing: border-box;
-	height: 332px;
-	/*max-width: 1920px;*/
+	width: 100%;
+	height: 150px;
 	margin: 0px auto;
-	padding: 75px 0px 0px 0px;
+	padding: 20px 0px 0px 0px;
+}
+.footer_menu_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1220px;
+	height: 85px;
+	margin: 0px auto;
 }
 .nav_container {
 	display: flex;
 	justify-content: space-between;
 	max-width: 1220px;
-	min-width: 845px;
 	margin: 0px auto;
-	padding: 41px 0px;
+	padding: 15px 0px;
 }
 .nav {
 	font-size: 16px;
@@ -225,4 +243,191 @@ body {
 .nav a {
 	text-decoration: none;
 	color: #A5A5A5;
+}
+
+
+
+@media all and (max-width: 1025px) {
+	.container {
+		max-width: 1024px;
+	}
+	
+	
+	.header_menu_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 956px;
+	height: 85px;
+	margin: 0px auto;
+}
+	.menulogo {
+	margin-right: 8.7%;
+}
+
+
+	.banner {
+		height: 43.5vw;
+		min-height: 445px;
+		margin: 90px 0px 0px 0px;
+		background: url("../source/pictures/fon/volk1_1024.png") no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	
+	.peysi {
+	box-sizing: border-box;
+	width: 100%;
+	height: 56.5vw;
+	min-height: 570px;
+	background: url("../source/pictures/fon/sfakelom2_1024.png") no-repeat;
+	background-size: 100% 100%;
+	margin: 0px auto;
+	position: relative;
+	}
+	.materials {
+		padding: 18% 0px 0px 0px;
+	}
+	
+	.footer_menu_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 956px;
+	height: 85px;
+	margin: 0px auto;
+}
+	.nav_container {
+	display: flex;
+	justify-content: space-between;
+	max-width: 956px;
+	margin: 0px auto;
+	}
+	.nav:first-child {
+	margin-right: 23.1%;
+	}
+}
+
+
+@media all and (max-width: 500px) {
+	.container {
+	max-width: 414px;
+	min-width: 414px;
+	}
+	
+	
+	.header {
+		height: 60px;
+	}
+	.header_menu_container {
+	display: block;
+	max-width: 100%;
+	height: 100%;
+	}
+	.menulogo {
+	margin-right: 0;
+	width: 121px;
+	height: 55.6px;
+	flex: 0 0 121px;
+	}
+	/* .header_burger {
+		display: block;
+		position: relative;
+		width: 36px;
+		height: 24px;
+	}
+	.header_burger span {
+		position: absolute;
+		background-color: #AE6734;
+		left: 0;
+		width: 100%;
+		height: 4px;
+		top: 10px;
+	}
+	.header_burger:before, .header_burger:after {
+		content: "";
+		background-color: #AE6734;
+		position: absolute;
+		width: 100%;
+		height: 4px;
+		left: 0;
+	}
+	.header_burger:before {
+		top: 0;
+	}
+	.header_burger:after {
+		bottom: 0;
+	} */
+	/*.menu {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #AE6734;
+	}*/
+	.menu {
+		display: none;
+	}
+	
+	.banner {
+	min-width: 100%;
+	background: url("../source/pictures/fon/volk1_414.png") no-repeat;
+	}
+	
+	
+	.nedremlet {
+	padding: 71px 0px 80px 0px;
+	}
+	.title {
+	font-size: 36px;
+	line-height: 42px;
+	margin: 0px 0px 60px 0px;
+	}
+	.cardscontainer {
+	max-width: 366px;
+	min-width: 366px;
+	}
+	.cards {
+	display: block;
+	}
+	.card {
+	width: 100%;
+	}
+	.card:nth-child(2) {
+	margin: 61px 0px 61px 0px;
+	}
+	
+	
+	.peysi {
+	min-width: 100%;
+	min-height: 534px;
+	padding: 0;
+	background: url("../source/pictures/fon/sfakelom2_414.png") no-repeat;
+	}
+	.background {
+	width: 100%;
+	height: 100%;
+	}
+	
+	
+	.footer {
+	height: 70px;
+	}
+	.footer_menu_container {
+	display: none;
+	}
+	.nav_container {
+	display: flex;
+	justify-content: center;
+	max-width: 100%;
+	margin: 0px auto;
+	padding: 15px 0px;
+	}
+	.nav:nth-child(n+2) {
+		display: none;
+	}
+	.nav:first-child {
+	margin-right: 0;
+}
 }
