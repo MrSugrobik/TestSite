@@ -36,32 +36,50 @@ body {
 	width: 100%;
 	height: 100%;
 	background-color: #1D1A1A;
+	z-index: 2;
 }
 .header_menu_container {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	max-width: 1220px;
-	height: 85px;
 	margin: 0px auto;
 	position: relative;
-	z-index:2;
 }
 .menulogo {
+	box-sizing: border-box;
+	height: 100%;
 	flex: 0 0 185px;
-	margin-right: 21.475%;
+	margin-right: 21%;
+	position: relative;
+	z-index: 3;
 }
 .menulogo img {
 	max-width: 100%;
 }
 .header_burger {
 	display: none;
+	width: 36px;
+	height: 24px;
+	position: relative;
+	z-index: 3;
+}
+.element_container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 65%;
+	height: 100%;
+	padding-right: 5%;
+	position: relative;
+	z-index: 2;
 }
 .menu {
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 21px;
 	padding-right: 8px;
+	position: relative;
+	z-index: 2;
 }
 .menu a {
 	text-decoration: none;
@@ -92,6 +110,7 @@ body {
 .title {
 	text-align: center;
 	margin: 0px 0px 2.3vw 0px;
+	font-weight: normal;
 	font-size: 40px;
 	line-height: 47px;
 }
@@ -125,6 +144,9 @@ body {
 }
 .card:nth-child(2) {
 	margin: 0px 4.2% 0px 4.2%;
+}
+.card img {
+	width: 100%;
 }
 .cardtitle {
 	font-size: 20px;
@@ -223,13 +245,14 @@ body {
 	max-width: 1220px;
 	height: 85px;
 	margin: 0px auto;
+	padding-right: 5%;
 }
 .nav_container {
 	display: flex;
 	justify-content: space-between;
 	max-width: 1220px;
 	margin: 0px auto;
-	padding: 15px 0px;
+	padding: 15px 5% 15px 0px;
 }
 .nav {
 	font-size: 16px;
@@ -255,10 +278,8 @@ body {
 	
 	.header_menu_container {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	max-width: 956px;
-	height: 85px;
 	margin: 0px auto;
 }
 	.menulogo {
@@ -286,7 +307,7 @@ body {
 	position: relative;
 	}
 	.materials {
-		padding: 18% 0px 0px 0px;
+		padding: 15% 0px 0px 0px;
 	}
 	
 	.footer_menu_container {
@@ -309,7 +330,7 @@ body {
 }
 
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 700px) {
 	.container {
 	max-width: 414px;
 	min-width: 414px;
@@ -320,58 +341,87 @@ body {
 		height: 60px;
 	}
 	.header_menu_container {
-	display: block;
-	max-width: 100%;
-	height: 100%;
+		justify-content: space-between;
+		max-width: 100%;
 	}
 	.menulogo {
-	margin-right: 0;
-	width: 121px;
-	height: 55.6px;
-	flex: 0 0 121px;
+		margin-right: 0;
+		width: 121px;
+		height: 55.6px;
+		flex: 0 0 121px;
 	}
-	/* .header_burger {
+	.header_burger {
 		display: block;
 		position: relative;
-		width: 36px;
-		height: 24px;
+		margin-right: 24px;
 	}
 	.header_burger span {
 		position: absolute;
-		background-color: #AE6734;
+		background-color: #FAF19E;
 		left: 0;
 		width: 100%;
 		height: 4px;
 		top: 10px;
+		transition: all 0.3s ease 0s;
 	}
 	.header_burger:before, .header_burger:after {
 		content: "";
-		background-color: #AE6734;
+		background-color: #FAF19E;
 		position: absolute;
 		width: 100%;
 		height: 4px;
 		left: 0;
+		transition: all 0.4s ease 0s;
 	}
 	.header_burger:before {
 		top: 0;
 	}
 	.header_burger:after {
 		bottom: 0;
-	} */
-	/*.menu {
+	}
+	.element_container {
+		box-sizing: border-box;
+		display: block;
 		position: fixed;
-		top: 0;
+		z-index: 1;
+		top: -100%;
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: #AE6734;
-	}*/
-	.menu {
-		display: none;
+		background-color: #6F370F;
+		padding: 70px 10px 20px 10px;
+		transition: all 0.3s ease 0s;
+		overflow: auto;
 	}
+	.menu {
+		margin: 0px 0px 20px 0px;
+		font-size: 30px;
+	}
+	
+	.header_burger.active:before {
+		transform: rotate(45deg);
+		top: 10px;
+	}
+	.header_burger.active:after {
+		transform: rotate(-45deg);
+		bottom: 10px;
+	}
+	.header_burger.active span {
+		transform: scale(0);
+	}
+	
+	.element_container.active {
+		top: 0;
+	}
+	
+	body.lock {
+		overflow: hidden;
+	}
+	
 	
 	.banner {
 	min-width: 100%;
+	margin: 60px 0px 0px 0px;
 	background: url("../source/pictures/fon/volk1_414.png") no-repeat;
 	}
 	
