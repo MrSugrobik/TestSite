@@ -12,7 +12,6 @@ body {
 .container {
 	box-sizing: border-box;
 	max-width: 1920px;
-	min-width: 845px;
 	margin: 0px auto;
 }
 
@@ -42,9 +41,11 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	box-sizing: border-box;
 	max-width: 1220px;
 	height: 100%;
 	margin: 0px auto;
+	padding: 0px 5% 0px 0px;
 }
 .menulogo {
 	box-sizing: border-box;
@@ -117,28 +118,30 @@ body {
 
 .nedremlet{
 	box-sizing: border-box;
-	padding: 71px 0px 95px 0px;
+	padding: 20px 0px 20px 0px;
 	width: 100%;
 	margin: 0px auto;
 }
 .title {
 	text-align: center;
-	margin: 0px 0px 2.3vw 0px;
+	margin: 0px 0px 1vw 0px;
 	font-weight: normal;
 	font-size: 40px;
 	line-height: 47px;
 }
 .cardscontainer {
 	box-sizing: border-box;
-	max-width: 63vw;
-	min-width: 845px;
+	max-width: 1208px;
+	/*min-width: 600px;*/
 	margin: 0px auto;
 }
 .cards {
 	display: flex;
 	width: 100%;
-	/*display: flex;
 	justify-content: space-between;
+	box-sizing: border-box;
+	padding: 5px;
+	/*display: flex;
 	/*align-items: center;
 	box-sizing: border-box;
 	height: 427px;
@@ -151,13 +154,13 @@ body {
 	display: flex;
 	flex-direction: column;
 	/*box-sizing: border-box;*/
-	width: 30.46%;
+	max-width: 380px;
 	/*flex:0 1 33.333%;
 	padding: 0px 20px;
 	border: 1px solid grey;*/
 }
 .card:nth-child(2) {
-	margin: 0px 4.2% 0px 4.2%;
+	margin: 0px 5px 0px 5px;
 }
 .card img {
 	width: 100%;
@@ -184,7 +187,8 @@ body {
 	display: block;
 	margin: 0px auto;
 	height: 64px;
-	width: 258px;
+	max-width: 258px;
+	min-width: 180px;
 	text-align: center;
 	line-height: 60px;
 }
@@ -211,20 +215,18 @@ body {
 .peysi {
 	box-sizing: border-box;
 	height: 35vw;
-	min-height: 579px;
+	max-height: 680px;
+	min-height: 350px;
 	width: 100%;
 	background: url("../source/pictures/fon/sfakelom2.png") no-repeat;
-	background-size: contain;
+	background-size: 100% auto;
 	margin: 0px auto;
 	position: relative;
-	/*z-index: 0;*/
 }
 .peysi_background {
 	position: absolute;
-	/*z-index: 1;*/
 	width: 100%;
 	height: 100%;
-	/*background: url("../source/pictures/fon/sfakelom2.png");*/
 	background-color: #1D1A1A;
 	opacity: 0.6;
 }
@@ -232,16 +234,16 @@ body {
 	position: relative;
 	/*z-index: 2;*/
 	max-width: 720px;
-	height: 50%;
+	max-height: 50%;
 	margin: 0px auto;
-	padding: 8.25% 0px 0px 0px;
+	padding: 3% 0px 0px 0px;
 }
 .materials_text {
 	font-size: 20px;
 	line-height: 30px;
 	color: #E4E4E4;
 	text-align: center;
-	margin: 0px 0px 5vw 0px;
+	margin: 0px 0px 2vw 0px;
 }
 
 
@@ -255,9 +257,11 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	box-sizing: border-box;
 	max-width: 1220px;
 	height: 85px;
 	margin: 0px auto;
+	padding: 0px 5% 0px 0px;
 }
 .footer_elements {
 	width: 65%;
@@ -267,7 +271,7 @@ body {
 	box-sizing: border-box;
 	max-width: 1220px;
 	margin: 0px auto;
-	padding: 15px 0px 15px 15px;
+	padding: 15px 5% 15px 15px;
 }
 .nav_list {
 	display: flex;
@@ -308,62 +312,190 @@ body {
 	
 	
 	.header_menu_container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	max-width: 956px;
-	margin: 0px auto;
-}
+		
+	}
 	.menulogo {
-	margin-right: 3%;
-}
+		margin-right: 1%;
+	}
 
 
-	/*.banner_background {
-		height: 100%;
-		background: url("../source/pictures/fon/volk1_1024.png") no-repeat;
-		background-size: 100% auto;
-	} */
-	
+	.banner {
+		min-height: 300px;
+	}
+
 	
 	.peysi {
-	box-sizing: border-box;
-	width: 100%;
-	height: 56.5vw;
-	min-height: 570px;
-	background: url("../source/pictures/fon/sfakelom2_1024.png") no-repeat;
-	background-size: 100% 100%;
-	margin: 0px auto;
-	position: relative;
+		box-sizing: border-box;
+		width: 100%;
+		height: 35vw;/*56.5vw;*/
+		max-height: 580px;
+		/*background: url("../source/pictures/fon/sfakelom2_1024.png") no-repeat;
+		background-size: contain;*/
+		margin: 0px auto;
+		position: relative;
 	}
 	.materials {
-		padding: 15% 0px 0px 0px;
+		/*padding: 15% 0px 0px 0px;*/
 	}
 	
 	.footer_menu_container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	max-width: 956px;
-	height: 85px;
-	margin: 0px auto;
-}
+	
+	}
 	.nav_container {
-	display: flex;
-	justify-content: space-between;
-	max-width: 956px;
-	margin: 0px auto;
+	
 	}
 	.nav_list li:first-child {
-	margin-right: 26%;
+		margin-right: 26%;
 	}
 }
 
 
-@media all and (max-width: 700px) {
+
+@media all and (max-width: 767px) {
 	.container {
-	max-width: 700px;
-	min-width: 414px;
+		max-width: 767px;
+	}
+	
+	
+	
+	.header {
+		height: 60px;
+	}
+	.header_menu_container {
+		justify-content: space-between;
+		max-width: 100%;
+		padding: 0px;
+	}
+	.menulogo {
+		margin-right: 0;
+		width: 121px;
+		height: 55.6px;
+		flex: 0 0 121px;
+	}
+	.header_burger {
+		display: block;
+		position: relative;
+		margin-right: 24px;
+	}
+	.header_burger span {
+		position: absolute;
+		background-color: #FAF19E;
+		left: 0;
+		width: 100%;
+		height: 4px;
+		top: 10px;
+		transition: all 0.3s ease 0s;
+	}
+	.header_burger:before, .header_burger:after {
+		content: "";
+		background-color: #FAF19E;
+		position: absolute;
+		width: 100%;
+		height: 4px;
+		left: 0;
+		transition: all 0.4s ease 0s;
+	}
+	.header_burger:before {
+		top: 0;
+	}
+	.header_burger:after {
+		bottom: 0;
+	}
+	.header_elements {
+		box-sizing: border-box;
+		display: block;
+		position: fixed;
+		z-index: 1;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #6F370F;
+		padding: 70px 10px 20px 10px;
+		transition: all 0.3s ease 0s;
+		overflow: auto;
+	}
+	.header_list {
+		display: block;
+	}
+	.header_list li {
+		margin: 0px 0px 20px 0px;
+		font-size: 30px;
+		text-align: center;
+	}
+	
+	.header_burger.active:before {
+		transform: rotate(45deg);
+		top: 10px;
+	}
+	.header_burger.active:after {
+		transform: rotate(-45deg);
+		bottom: 10px;
+	}
+	.header_burger.active span {
+		transform: scale(0);
+	}
+	
+	.header_elements.active {
+		top: 0;
+	}
+	
+	body.lock {
+		overflow: hidden;
+	}
+
+
+
+	.banner {
+		padding: 60px 0px 0px 0px;
+		box-sizing: border-box;
+	}
+	.banner_background {
+	width: 100%;
+	background: url("../source/pictures/fon/volk1_1024.png") no-repeat;
+	background-size: 100% auto;
+	}
+
+
+
+	.peysi {
+		background: url("../source/pictures/fon/sfakelom2_1024.png") no-repeat;
+		background-size: 100% auto;
+	}
+	
+	
+	
+	.footer {
+	height: 50px;
+	padding: 0px;
+	}
+	.footer_menu_container {
+	display: none;
+	}
+	.nav_container {
+	display: flex;
+	justify-content: center;
+	max-width: 100%;
+	margin: 0px auto;
+	padding: 15px 5% 15px 5%;
+	}
+	.nav_list {
+		justify-content: center;
+	}
+	.nav_list li:nth-child(n+2) {
+		display: none;
+	}
+	.nav_list li:first-child {
+	margin-right: 0;
+	}
+}
+
+
+
+@media all and (max-width: 560px) {
+	.container {
+	max-width: 560px;
+	min-width: 320px;
 	}
 	
 	
@@ -429,6 +561,7 @@ body {
 	.header_list li {
 		margin: 0px 0px 20px 0px;
 		font-size: 30px;
+		text-align: center;
 	}
 	
 	.header_burger.active:before {
@@ -452,32 +585,38 @@ body {
 	}
 	
 	
+	
 	.banner {
-		margin: 60px 0px 0px 0px;
+		min-width: 320px;
+		width: 100%;
+		min-height: 512px;
+		padding: 60px 0px 0px 0px;
 	}
 	.banner_background {
 	min-width: 100%;
 	background: url("../source/pictures/fon/volk1_414.png") no-repeat;
+	background-size: 100% auto;
 	}
 	
 	
 	.nedremlet {
-	padding: 71px 0px 80px 0px;
+	
 	}
 	.title {
 	font-size: 36px;
 	line-height: 42px;
-	margin: 0px 0px 60px 0px;
+	margin: 0px 0px 20px 0px;
 	}
 	.cardscontainer {
-	max-width: 366px;
-	min-width: 366px;
+	max-width: 700px;
+	min-width: 320px;
 	}
 	.cards {
 	display: block;
+	padding: 0px 5% 0px 5%;
 	}
 	.card {
-	width: 100%;
+	max-width: 560px;
 	}
 	.card:nth-child(2) {
 	margin: 61px 0px 61px 0px;
@@ -485,19 +624,30 @@ body {
 	
 	
 	.peysi {
-	min-width: 100%;
-	min-height: 534px;
+	width: 100%;
+	min-height: 420px;
 	padding: 0;
 	background: url("../source/pictures/fon/sfakelom2_414.png") no-repeat;
+	background-size: 100% auto;
 	}
-	.background {
+	.peysi_background {
 	width: 100%;
 	height: 100%;
 	}
+	.materials {
+		padding: 0px;
+	}
+	.materials_text {
+		font-size: 18px;
+		line-height: 26px;
+		margin: 0px 0px 16vw 0px;
+	}
+	
 	
 	
 	.footer {
-	height: 70px;
+	height: 50px;
+	padding: 0px 0px 0px 0px;
 	}
 	.footer_menu_container {
 	display: none;
@@ -507,6 +657,9 @@ body {
 	justify-content: center;
 	max-width: 100%;
 	margin: 0px auto;
+	}
+	.nav_list {
+		justify-content: center;
 	}
 	.nav_list li:nth-child(n+2) {
 		display: none;
